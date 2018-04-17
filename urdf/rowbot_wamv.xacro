@@ -40,6 +40,9 @@
   <xacro:include filename="$(find nps_robotx)/urdf/p3d_wamv.xacro" />
   <xacro:p3d_wamv name="p3d_wamv"/-->
 
+  <xacro:include filename="$(find rowbot_description)/urdf/magnetic_wamv.xacro" />
+  <xacro:magnetic_wamv name="magnetic_wamv"/>
+
   <xacro:include filename="$(find pointgrey_camera_description)/urdf/pointgrey_flea3.urdf.xacro" />
   <xacro:pointgrey_flea3 frame="mycamera"/>
   <joint name="mycamera_joint" type="fixed">
@@ -49,8 +52,8 @@
   </joint>
 
   <xacro:include filename="$(find velodyne_description)/urdf/VLP-16.urdf.xacro"/>
-  <VLP-16 parent="base_link" name="velodyne" topic="/velodyne_points" hz="10" samples="440">
-    <origin xyz="0.8 0 1.3" rpy="0 0 0" />
+  <VLP-16 parent="base_link" name="velodyne" topic="rowbot/velodyne_points" hz="10" samples="440">
+    <origin xyz="0.8 0 1.8" rpy="0 0 0" />
   </VLP-16>
 
 

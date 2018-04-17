@@ -6,9 +6,9 @@
 	<updateRate>1.0</updateRate>
 	<alwaysOn>true</alwaysOn>
         <bodyName>gps</bodyName>
-        <frameId>gps</frameId>
-	<topicName>fix</topicName>
-        <velocityTopicName>fix_velocity</velocityTopicName>
+        <frameId>rowbot/gps</frameId>
+	<topicName>rowbot/fix</topicName>
+        <velocityTopicName>rowbot/fix_velocity</velocityTopicName>
 
 	<!-- Location of origin of Gazebo Sand Island map -->
 	<referenceLatitude>21.30996</referenceLatitude>

@@ -7,8 +7,8 @@
       <plugin name="imu_wamv_${name}" filename="libhector_gazebo_ros_imu.so">
         <updateRate>10.0</updateRate>
         <bodyName>base_link</bodyName>
-        <topicName>imu/data</topicName>
-        <serviceName>imu_service</serviceName>
+        <topicName>rowbot/imu/data</topicName>
+        <serviceName>rowbot/imu_service</serviceName>
         <frameId>base_link</frameId>
         <alwaysOn>true</alwaysOn>
 
