@@ -5,7 +5,7 @@
       <plugin name="p3d_wamv_${name}" filename="libgazebo_ros_p3d.so">
 	<bodyName>base_link</bodyName>
 	<frameName>map</frameName>
-	<updateRate>10.0</updateRate>
+	<updateRate>20.0</updateRate>
 	<topicName>p3d_odom</topicName>
 	<xyzOffset>0 0 0</xyzOffset>
 	<rpyOffset>0 0 0</rpyOffset>

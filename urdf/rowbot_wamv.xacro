@@ -28,7 +28,7 @@
     <xacro:multibeam_wamv name="multibeam_wamv"/-->
 
    <!-- Add simulated GPS -->
-  <xacro:include filename="$(find nps_robotx)/urdf/gps_wamv.xacro" />
+  <xacro:include filename="$(find rowbot_description)/urdf/gps_wamv.xacro" />
   <xacro:gps_wamv name="gps_wamv"/>
 
   
@@ -36,9 +36,9 @@
   <xacro:include filename="$(find nps_robotx)/urdf/imu_wamv.xacro" />
   <xacro:imu_wamv name="imu_wamv"/>
   
-  <!-- Add P3D ground truth >
-  <xacro:include filename="$(find nps_robotx)/urdf/p3d_wamv.xacro" />
-  <xacro:p3d_wamv name="p3d_wamv"/-->
+  <!-- Add P3D ground truth -->
+  <xacro:include filename="$(find rowbot_description)/urdf/p3d_wamv.xacro" />
+  <xacro:p3d_wamv name="p3d_wamv"/>
 
   <xacro:include filename="$(find rowbot_description)/urdf/magnetic_wamv.xacro" />
   <xacro:magnetic_wamv name="magnetic_wamv"/>

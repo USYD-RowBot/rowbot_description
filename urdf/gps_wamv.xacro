@@ -3,7 +3,7 @@
   <xacro:macro name="gps_wamv" params="name">
     <gazebo>
       <plugin name="gps_plugin_${name}" filename="libhector_gazebo_ros_gps.so">
-	<updateRate>1.0</updateRate>
+	<updateRate>20.0</updateRate>
 	<alwaysOn>true</alwaysOn>
         <bodyName>gps</bodyName>
         <frameId>rowbot/gps</frameId>
